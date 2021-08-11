@@ -36,17 +36,27 @@
 // console.log(ten(keren));
 
 // -------- ans 3 ------------?
-num = [1, 2, 1, 2, 3, 3, 2, 2]
-function A(num) {
-    for (var i = 0; i < num.length; i++) {
-        for (var j = 1; j < num.length; j++) {
-            if (num[i] == num[j]) {
-                console.log(num[i])
+// מספר שמופיע הכי הרבה פעמים
+function news(array) {
+    var counter = 0;
+    var char
+    var max = 0
+    for (let i = 0; i < array.length; i++) {
+        for (let j = i + 1; j < array.length; j++) {
+            if (array[i] = array[j]) {
+                counter++;
             }
-        } 
-    } return num[i]
+        }
+        if (counter > max) {
+            max = counter;
+            char = array[i]
+        }
+
+    } return char
 }
-console.log(A(num))
+var count = [2, 4, 2, 4, 2, 9, 6, 8, 4]
+var counters = news(count)
+console.log(counters)
 
 // -------- ans 4 ------------!
 // var result = 1;
